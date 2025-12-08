@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://cmhc05s53o27m"]
+
+[ext_resource type="Texture2D" uid="uid://de56qs8f32hl3" path="res://Player/Sprites/IDLE/idle_00.png" id="1_kelma"]
+[ext_resource type="Script" uid="uid://c1o7dwn17sew1" path="res://Scripts/PlayerController.gd" id="1_y8w33"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jnk4e"]
+size = Vector2(339, 522)
+
+[node name="Main" type="Node2D"]
+
+[node name="Player" type="CharacterBody2D" parent="."]
+texture_filter = 1
+script = ExtResource("1_y8w33")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+position = Vector2(511, 364)
+shape = SubResource("RectangleShape2D_jnk4e")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player"]
+texture_filter = 1
+position = Vector2(515, 367)
+texture = ExtResource("1_kelma")

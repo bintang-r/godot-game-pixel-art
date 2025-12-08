@@ -1,0 +1,3 @@
+res://main.tscn
+res://Scene/player.tscn
+res://Scripts/PlayerController.gd
