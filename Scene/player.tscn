@@ -196,7 +196,7 @@ position = Vector2(592.00006, 338.00003)
 scale = Vector2(0.2, 0.2)
 sprite_frames = SubResource("SpriteFrames_jx4b7")
 animation = &"animation_walk"
-frame_progress = 0.77608836
+frame_progress = 0.23875844
 
 [node name="music_01" type="AudioStreamPlayer2D" parent="Player"]
 stream = ExtResource("38_71nu8")

@@ -29,6 +29,10 @@ var dash_direction := 0
 func _ready():
 	music_01.loop = true
 	music_01.play()
+	music_01.finished.connect(_on_music_finished)
+
+func _on_music_finished():
+	music_01.play()
 	
 func _physics_process(delta: float) -> void:
 
@@ -91,8 +95,6 @@ func _physics_process(delta: float) -> void:
 		animation_sprite.play("animation_idle")
 
 	move_and_slide()
-
-
 
 # ============================
 # DASH FUNCTIONS
