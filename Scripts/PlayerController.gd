@@ -27,11 +27,6 @@ var dash_cooldown_timer := 0.0
 var dash_direction := 0
 
 func _ready():
-	music_01.loop = true
-	music_01.play()
-	music_01.finished.connect(_on_music_finished)
-
-func _on_music_finished():
 	music_01.play()
 	
 func _physics_process(delta: float) -> void:

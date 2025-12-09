@@ -1,6 +1,6 @@
 CollisionShape2D
-StaticBody2D
 TileMapLayer
+StaticBody2D
 AudioStreamPlayer2D
 AnimatedSprite2D
 Camera2D
