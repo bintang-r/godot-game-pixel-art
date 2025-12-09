@@ -1,5 +1,5 @@
-CollisionShape2D
 TileMapLayer
+CollisionShape2D
 StaticBody2D
 AudioStreamPlayer2D
 AnimatedSprite2D
