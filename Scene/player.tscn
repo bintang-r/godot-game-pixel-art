@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=3 uid="uid://cmhc05s53o27m"]
+[gd_scene load_steps=46 format=4 uid="uid://cmhc05s53o27m"]
 
 [ext_resource type="Texture2D" uid="uid://de56qs8f32hl3" path="res://Player/Sprites/IDLE/idle_00.png" id="1_kelma"]
 [ext_resource type="Script" uid="uid://c1o7dwn17sew1" path="res://Scripts/PlayerController.gd" id="1_y8w33"]
@@ -39,9 +39,150 @@
 [ext_resource type="Texture2D" uid="uid://doqrpswfmis25" path="res://Player/Sprites/JUMP/jump_11.png" id="25_tmdkp"]
 [ext_resource type="AudioStream" uid="uid://bin3qekqjmjiw" path="res://Sound/music_01.mp3" id="38_71nu8"]
 [ext_resource type="AudioStream" uid="uid://msrsoswqkeii" path="res://Sound/jump_effect.mp3" id="38_cvqm3"]
+[ext_resource type="Texture2D" uid="uid://fhk8md563uuh" path="res://Assets/world_tileset.png" id="40_dfe5c"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dfe5c"]
+texture = ExtResource("40_dfe5c")
+0:0/next_alternative_id = 3
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 0.5395756, -8, 8, -8, 8, 8, -8, 8)
+0:0/1 = 1
+0:0/2 = 2
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+11:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, -8, -8, 8, -8, 8, 8, -8, 8, -8, -8, 8, 8)
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+11:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+9:2/0 = 0
+10:2/0 = 0
+11:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+8:3/0 = 0
+9:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+9:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+3:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+8:7/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+5:8/0 = 0
+6:8/0 = 0
+7:8/0 = 0
+8:8/0 = 0
+0:9/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+5:9/0 = 0
+6:9/0 = 0
+7:9/0 = 0
+0:10/0 = 0
+1:10/0 = 0
+2:10/0 = 0
+3:10/0 = 0
+4:10/0 = 0
+6:10/0 = 0
+0:11/0 = 0
+1:11/0 = 0
+2:11/0 = 0
+3:11/0 = 0
+4:11/0 = 0
+5:11/0 = 0
+0:12/0 = 0
+1:12/0 = 0
+2:12/0 = 0
+3:12/0 = 0
+4:12/0 = 0
+0:13/0 = 0
+1:13/0 = 0
+2:13/0 = 0
+3:13/0 = 0
+4:13/0 = 0
+5:13/0 = 0
+0:14/0 = 0
+1:14/0 = 0
+2:14/0 = 0
+3:14/0 = 0
+4:14/0 = 0
+0:15/0 = 0
+1:15/0 = 0
+2:15/0 = 0
+3:15/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_8wn1n"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_dfe5c")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jnk4e"]
-size = Vector2(67, 107)
+size = Vector2(20, 55)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_jx4b7"]
 animations = [{
@@ -169,18 +310,23 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_y8w33"]
-normal = Vector2(-0.008333044, -0.9999653)
-distance = 86.0
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_dfe5c"]
+distance = -762.0
 
 [node name="Main" type="Node2D"]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+physics_interpolation_mode = 1
+tile_map_data = PackedByteArray("AAAiABcAAAAAAAAAAAAjABcAAAAAAAAAAAAkABcAAAAAAAAAAAAlABcAAAAAAAAAAAAmABcAAAAAAAAAAAAnABcAAAAAAAAAAAA=")
+tile_set = SubResource("TileSet_8wn1n")
+collision_enabled = false
 
 [node name="Player" type="CharacterBody2D" parent="."]
 texture_filter = 1
 script = ExtResource("1_y8w33")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
-position = Vector2(589, 334)
+position = Vector2(590, 337.5)
 shape = SubResource("RectangleShape2D_jnk4e")
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
@@ -193,10 +339,10 @@ drag_vertical_enabled = true
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player"]
 texture_filter = 1
 position = Vector2(592.00006, 338.00003)
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.1, 0.1)
 sprite_frames = SubResource("SpriteFrames_jx4b7")
-animation = &"animation_walk"
-frame_progress = 0.23875844
+animation = &"animation_jump"
+frame_progress = 0.10175733
 
 [node name="music_01" type="AudioStreamPlayer2D" parent="Player"]
 stream = ExtResource("38_71nu8")
@@ -208,8 +354,7 @@ stream = ExtResource("38_cvqm3")
 volume_db = -16.0
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
-position = Vector2(72, 15)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(452, 720)
-shape = SubResource("WorldBoundaryShape2D_y8w33")
+position = Vector2(531, -5)
+shape = SubResource("WorldBoundaryShape2D_dfe5c")
