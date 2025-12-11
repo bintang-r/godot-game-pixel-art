@@ -31,11 +31,11 @@ func _ready():
 	
 func _physics_process(delta: float) -> void:
 
-	# =============== DASH COOLDOWN ===============
+	#  DASH COOLDOWN 
 	if dash_cooldown_timer > 0:
 		dash_cooldown_timer -= delta
 
-	# =============== DASH INPUT ===============
+	#  DASH INPUT 
 	if Input.is_action_just_pressed("dash") \
 	and dash_cooldown_timer <= 0 \
 	and not is_dashing:
@@ -48,17 +48,17 @@ func _physics_process(delta: float) -> void:
 
 		start_dash(dir)
 
-	# =============== DASH MODE ===============
+	#  DASH MODE 
 	if is_dashing:
 		process_dash(delta)
 		return  # cegah movement/animasi normal
 
 
-	# =============== GRAVITY ===============
+	#  GRAVITY 
 	if not is_on_floor():
 		velocity.y += gravity * delta
 
-	# =============== JUMP ===============
+	#  JUMP 
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = jump_force
 		sfx_jump.play()
@@ -67,7 +67,7 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_just_released("jump") and velocity.y < 0:
 		velocity.y *= decelerate_on_jump_release
 
-	# =============== MOVEMENT ===============
+	#  MOVEMENT 
 	var current_speed = run_speed if Input.is_action_pressed("run") else walk_speed
 	var direction = Input.get_axis("left", "right")
 
@@ -77,7 +77,7 @@ func _physics_process(delta: float) -> void:
 	else:
 		velocity.x = move_toward(velocity.x, 0, current_speed * deceleration)
 
-	# =============== ANIMATION CONTROLLER ===============
+	#  ANIMATION CONTROLLER 
 	# Prioritas animasi:
 	# 1. Jump
 	# 2. Walk
@@ -91,9 +91,9 @@ func _physics_process(delta: float) -> void:
 
 	move_and_slide()
 
-# ============================
+# 
 # DASH FUNCTIONS
-# ============================
+# 
 
 func start_dash(dir: float) -> void:
 	is_dashing = true
