@@ -12,10 +12,10 @@ extends CharacterBody2D
 @export_range(0,1) var acceleration := 0.1
 @export_range(0,1) var decelerate_on_jump_release := 0.5
 
-# ANIMATION
+#! ANIMATION
 @onready var animation_sprite: AnimatedSprite2D = $AnimatedSprite2D
 
-# SOUND
+#! SOUND
 @onready var sfx_jump: AudioStreamPlayer2D = $sfx_jump
 @onready var music_01: AudioStreamPlayer2D = $music_01
 
